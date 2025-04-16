@@ -16,4 +16,4 @@ for i in range(100):
 This will attempt to broadcast data to the MQTT broker at `host`. If a broadcast fails, the messages
 are queued in a local sqlite file `queue.db`. A background thread periodically attempts to reconnect
 and send unsent data from the sqllite file. Old messages (sent and unsent) are retained in the file up to
-`retention` seconds after they have been created.
+`retention` seconds after they have been created. Compatible with any MQTT broker.
